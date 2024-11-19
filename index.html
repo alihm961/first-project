@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Ali Mazloum</h1>
+      <nav class="header__nav-list">
+        <ul class="nav-list">
+          <li>
+            <a class="nav-list__link nav-list__link--active" href="#">Home</a>
+          </li>
+          <li><a class="nav-list__link" href="#about">About Me</a></li>
+          <li><a class="nav-list__link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-list__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="about" id="about">
+        <h2 class="about__title">About Me</h2>
+        <p class="about__text">
+          Hello, I'm Ali Mazloum, a web developer passionate about creating
+          beautiful and functional websites.
+        </p>
+        <p class="about__text">
+          I specialize in front-end and back-end web development, and I love
+          turning ideas into reality.
+        </p>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">My Portfolio</h2>
+        <div class="portfolio__cards">
+          <div class="project">
+            <img
+              class="project__image"
+              src="images/portfolio-1.jpg"
+              alt="Project"
+            />
+            <h3 class="project__title">Eco-Friendly Travel App</h3>
+            <p class="project__description">
+              An app that helps travelers find eco-conscious accommodations,
+              activities, and offset their carbon footprint.
+            </p>
+            <button class="project__button">View project</button>
+          </div>
+
+          <div class="project">
+            <img
+              class="project__image"
+              src="images/portfolio-2.jpg"
+              alt="Project"
+            />
+            <h3 class="project__title">Virtual Health and Fitness Community</h3>
+            <p class="project__description">
+              A platform connecting fitness enthusiasts, offering virtual
+              workouts, nutrition advice, and progress tracking.
+            </p>
+            <button class="project__button">View project</button>
+          </div>
+
+          <div class="project">
+            <img
+              class="project__image"
+              src="images/portfolio-3.jpg"
+              alt="Project"
+            />
+            <h3 class="project__title">
+              AI-Powered Personalized Learning Platform
+            </h3>
+            <p class="project__description">
+              An educational platform that tailors content to individual
+              learning styles, offering interactive lessons and progress
+              tracking.
+            </p>
+            <button class="project__button">View project</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2 class="contact__title">Contact Me</h2>
+        <form class="contact__form">
+          <label class="contact__label" for="name">Name</label>
+          <input
+            class="contact__input"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+          <br />
+          <br />
+          <label class="contact__label" for="email">Email</label>
+          <input
+            class="contact__input"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <br />
+          <br />
+          <label class="contact__label" for="message">Message</label>
+          <textarea
+            class="contact__textarea"
+            name="message"
+            id="message"
+            rows="4"
+          ></textarea>
+          <br />
+          <br />
+          <input class="contact__submit" type="submit" value="Send Message" />
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; Portfolio</p>
+    </footer>
+  </body>
+</html>
